@@ -1,6 +1,14 @@
 # README
 17373260 彭毛小民
 
+17373015 乔玺华
+
+## how-to-use
+
+dir `bin` has a core CLI application
+dir `guibin` has a GUI application with our dll file
+dir `guiwithotherdll` has a GUI application with dll file from other group.
+
 ## preliminary
 
 1. 两条直线的交点公式，联立
