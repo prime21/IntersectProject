@@ -21,19 +21,14 @@ int main(int argc, char* argv[]) {
 		v.push_back(now);
 	}
 	solve mysolve;
-	vector< pair<double,double> > ans = mysolve.count(v);
+	//vector< pair<double,double> > ans = mysolve.count(v);
 
-	vector<Point> test;
+	//for (auto &p : ans) {
+	//	cerr << p.first << " " << p.second << endl;
+	//}
+	//
+	
+	cout << mysolve.count_int(v) << endl;
 
-	Line l = mysolve.getLine(v[1]);
-	Circle c = mysolve.getCircle(v[0]);
-	mysolve.getLcInter(l,c,test);
-	for (auto &p: test) {
-		cerr << p.x << " " << p.y << endl;
-	}
-
-	for (auto &p : ans) {
-		cerr << p.first << " " << p.second << endl;
-	}
 	return 0;
 }
