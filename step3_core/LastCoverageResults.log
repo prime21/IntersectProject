@@ -1,0 +1,21 @@
+[2020-03-24 16:26:52] [info] Start Program:
+Path:"C:\\Study\\CS\\SE\\hw2\\step3_core\\Debug\\step3_core.exe"
+Arguments:-i 1.in -o 1.out 
+Working directory: "C:\\Study\\CS\\SE\\hw2\\step3_core\\"
+Modules: Selected: C:\Study\CS\SE\hw2\step3_core\Debug\step3_core.exe C:\Study\CS\SE\hw2\step3_core\Debug\UnitTest_pair.dll Excluded: 
+Sources: Selected: C:\Study\CS\SE\hw2\step3_core C:\Study\CS\SE\hw2\UnitTest_pair Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: binary C:\Users\prime21\AppData\Local\Temp\pqarb4we.y11 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2020-03-24 16:26:52] [info] Module: C:\Study\CS\SE\hw2\step3_core\Debug\step3_core.exe is selected because it matches selected pattern: 
+[2020-03-24 16:26:52] [info] ----------------------------------------------------
+[2020-03-24 16:26:52] [info] Coverage binary generated in file: C:\Users\prime21\AppData\Local\Temp\pqarb4we.y11
+[2020-03-24 16:26:52] [info] ----------------------------------------------------
