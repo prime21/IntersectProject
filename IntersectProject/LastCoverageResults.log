@@ -1,0 +1,22 @@
+[2020-03-10 18:22:16] [info] Start Program:
+Path:"C:\\Study\\CS\\SE\\hw2\\IntersectProject\\Debug\\IntersectProject.exe"
+Arguments:
+Working directory: "C:\\Study\\CS\\SE\\hw2\\IntersectProject\\"
+Modules: Selected: C:\Study\CS\SE\hw2\IntersectProject\Debug\IntersectProject.exe C:\Study\CS\SE\hw2\IntersectProject\Debug\InterSectTest.dll Excluded: 
+Sources: Selected: C:\Study\CS\SE\hw2\IntersectProject C:\Study\CS\SE\hw2\InterSectTest Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: binary C:\Users\prime21\AppData\Local\Temp\hz3qa5dn.opj 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2020-03-10 18:22:16] [info] Module: C:\Study\CS\SE\hw2\IntersectProject\Debug\IntersectProject.exe is selected because it matches selected pattern: 
+[2020-03-10 18:27:12] [info] ----------------------------------------------------
+[2020-03-10 18:27:12] [info] Coverage binary generated in file: C:\Users\prime21\AppData\Local\Temp\hz3qa5dn.opj
+[2020-03-10 18:27:12] [info] ----------------------------------------------------
+[2020-03-10 18:27:12] [error] Your program stop with error code: 1

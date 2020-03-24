@@ -1,75 +1,20 @@
-﻿#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <iterator>
-#include <numeric>
-#include <cmath>
-
-typedef std::pair<long long, long long> poi;
-
-const double eps = 1e-10;
-
-enum objtp {
-	LINE, CIRCLE, NOTP
-};
-
-int dcmp(double x) {
-	if (fabs(x) < eps) return 0;
-	if (x > eps) return 1;
-	return -1;
-}
+﻿#include "inter.hpp"
 
 long long mygcd(long long n1, long long n2) {
 	return (n2 == 0) ? n1 : mygcd(n2, n1 % n2);
 }
 
-struct inter {
-	double x;
-	double y;
-	inter() { x = 0; y = 0; }
-	inter(double x, double y) : x(x), y(y) {}
-	inter(poi p) : x(p.first * 1.), y(p.second * 1.) {}
-	bool operator == (const inter& rhs) const {
-		return dcmp(x - rhs.x) == 0 && dcmp(y - rhs.y) == 0;
-	}
-	bool operator < (const inter& rhs) const {
-		int d = dcmp(x - rhs.x);
-		if (d < 0) return true;
-		if (d > 0) return false;
-		if (dcmp(y - rhs.y) < 0) return true;
-		return false;
-	}
-
-	friend inter operator + (const inter& lhs, const inter& rhs) {
-		return inter(lhs.x + rhs.x, lhs.y + rhs.y);
-	}
-
-	friend inter operator - (const inter& lhs, const inter& rhs) {
-		return inter(lhs.x - rhs.x, lhs.y - rhs.y);
-	}
-
-	friend inter operator / (const inter& lhs, const double& d) {
-		return inter(lhs.x / d, lhs.y / d);
-	}
-	
-	friend inter operator * (const inter& lhs, const double& d) {
-		return inter(lhs.x * d, lhs.y * d);
-	}
-
-	friend double operator * (const inter& lhs, const inter& rhs) {
-		return lhs.x * rhs.x + lhs.y * rhs.y;
-	}
-
-	double length() {
-		return sqrt(x * x + y * y);
-	}
-
-	double length2() {
-		return x * x + y * y;
-	}
-};
+int ddcmp(double x) {
+	if (fabs(x) < eps) return 0;
+	if (x > eps) return 1;
+	return -1;
+}
 
 std::vector<inter> gb_in;
+
+enum objtp {
+	LINE, CIRCLE, NOTP
+};
 
 struct obj{
 	objtp type;
@@ -208,8 +153,18 @@ void Linear_count() {
 	// WA
 }
 
-int main()
+int main(int argc, char* argv[])
 {
+	errno_t err;
+	FILE* stream;
+	for (int i = 0; i < argc; ++i) {
+		if (argv[i][0] == '-' && argv[i][1] == 'o')
+			err = freopen_s(&stream, argv[i + 1], "w", stdout);
+		if (argv[i][0] == '-' && argv[i][1] == 'i')
+			err = freopen_s(&stream, argv[i + 1], "r", stdin);
+	}
+	ios::sync_with_stdio(false);
+
 	Init();
 	//if (n <= 1000 || IsSimple == 0) {
 		BF();
